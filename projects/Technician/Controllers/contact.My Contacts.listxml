@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Attributes>
+    <EntityName>contact</EntityName>
+    <VisualStudioProjectId>c0f71827-e4f6-464e-a71d-c36687d5738e</VisualStudioProjectId>
+    <ClassBinding />
+  </Attributes>
+  <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
+  <Name>My Contacts</Name>
+  <Kind>List</Kind>
+  <IsDefault>false</IsDefault>
+  <AutoWideWidth>0</AutoWideWidth>
+  <AutoHeader>0</AutoHeader>
+  <MaxColumns>0</MaxColumns>
+  <Fetch version="1.0">
+    <entity name="contact">
+      <filter type="and">
+        <condition attribute="ownerid" operator="eq-userid" />
+      </filter>
+    </entity>
+  </Fetch>
+  <Search>
+    <attribute schema="name" method="BeginsWith" />
+  </Search>
+  <OrderBy>name</OrderBy>
+  <SerializedBindings>
+    <string>telephone1</string>
+    <string>parentcustomerid</string>
+    <string>emailaddress1</string>
+    <string>name</string>
+    <string>id</string>
+  </SerializedBindings>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>240</Width>
+      <Height>40</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="name">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>43,1,192,24</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>1</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="emailaddress1">
+          <IsConstant>false</IsConstant>
+          <StyleName>r_gray</StyleName>
+          <Bounds>168,25,67,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>8</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="parentcustomerid">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray</StyleName>
+          <Bounds>43,25,55,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="telephone1">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray</StyleName>
+          <Bounds>97,25,71,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>8</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="img">
+          <IsConstant>true</IsConstant>
+          <StyleName>ListNoteImage</StyleName>
+          <Bounds>1,1,41,39</Bounds>
+          <CellKind>1</CellKind>
+          <Anchor>7</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties />
+  <SerializedChildren />
+  <Height>40</Height>
+  <IFrameProvidesDS>false</IFrameProvidesDS>
+</EntityList>

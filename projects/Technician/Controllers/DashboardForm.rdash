@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Columns>2</Columns>
+  <Rows>2</Rows>
+  <Items>
+    <DashboardComponent xsi:type="DashboardEntityComponent" Kind="List" Binding="fs_workorderschedule;&lt;extra&gt;&lt;views&gt;fs_workorderschedule.@My Today's WorkOrder Schedules:fs_workorderschedule.My WorkOrder Schedules&lt;/views&gt;&lt;actions&gt;193;0;4&lt;/actions&gt;&lt;/extra&gt;" Options="0">
+      <LegacyConfig>fs_workorderschedule;fs_workorderschedule.@My Today's WorkOrder Schedules:fs_workorderschedule.My WorkOrder Schedules</LegacyConfig>
+      <Bounds>0,0,1,1</Bounds>
+    </DashboardComponent>
+    <DashboardComponent xsi:type="DashboardEntityComponent" Kind="List" Binding="fs_workorderschedule;&lt;extra&gt;&lt;views&gt;fs_workorderschedule.@My Today's WorkOrder Schedules:fs_workorderschedule.My WorkOrder Schedules:fs_workorderschedule.WorkOrder Schedules&lt;/views&gt;&lt;actions&gt;96;0;0&lt;/actions&gt;&lt;/extra&gt;" Options="2">
+      <LegacyConfig>fs_workorderschedule;fs_workorderschedule.@My Today's WorkOrder Schedules:fs_workorderschedule.My WorkOrder Schedules:fs_workorderschedule.WorkOrder Schedules</LegacyConfig>
+      <Bounds>0,1,1,1</Bounds>
+    </DashboardComponent>
+    <DashboardComponent xsi:type="DashboardEntityComponent" Kind="Chart" Binding="fs_workorderproduct" Options="3">
+      <Bounds>1,0,1,2</Bounds>
+    </DashboardComponent>
+  </Items>
+</Dashboard>

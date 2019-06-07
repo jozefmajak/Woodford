@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2">
+  <IsContactForm>false</IsContactForm>
+  <EntityName>fs_workorder</EntityName>
+  <CamelCase>fs_workorder</CamelCase>
+  <ClassBinding />
+  <SerializedChildren />
+  <SerializedChildrenV2>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>WorkOrder</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="name" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="customerid" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem xsi:type="SeparatorDetailItem" image="false" separator="true">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="statuscode" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="completionpercent" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem xsi:type="SeparatorDetailItem" image="false" separator="true">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="estimatedduration" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="totalduration" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem xsi:type="SeparatorDetailItem" image="false" separator="true">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="territoryid" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="ownerid" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Details</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="estimatedamount" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="isamountsystemcalculated" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="discountamount" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="discountpercentage" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="totalamount" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem xsi:type="SeparatorDetailItem" image="false" separator="true">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="transactioncurrencyid" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="pricelevelid" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Address</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="Street" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="City" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="State" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="Country" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="PostalCode" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem xsi:type="SeparatorDetailItem" image="false" separator="true">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="Latitude" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="Longitude" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab" flexi="1" flexiHeight="200px" flexiHeader="1" flexiOrientation="1" flexiMaxLines="0" FlipMode="0">
+      <Name>Incidents</Name>
+      <CustomName>Incidents</CustomName>
+      <LogicalName>fs_workorderincident.workorderid</LogicalName>
+      <Binding SchemaName="fs_workorderincident.workorderid">
+        <IsConstant>false</IsConstant>
+      </Binding>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab" flexi="1" flexiHeight="200px" flexiHeader="1" flexiOrientation="1" flexiMaxLines="0" FlipMode="0">
+      <Name>Skills</Name>
+      <CustomName>Skills</CustomName>
+      <LogicalName>fs_workorderskill.workorderid</LogicalName>
+      <Binding SchemaName="fs_workorderskill.workorderid">
+        <IsConstant>false</IsConstant>
+      </Binding>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab" flexi="1" flexiHeight="200px" flexiHeader="1" flexiOrientation="1" flexiMaxLines="0" FlipMode="0">
+      <Name>WorkOrder Products List</Name>
+      <LogicalName>fs_workorderproduct.workorderid</LogicalName>
+      <Binding SchemaName="fs_workorderproduct.workorderid">
+        <IsConstant>false</IsConstant>
+      </Binding>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab" flexi="1" flexiHeight="200px" flexiHeader="1" flexiOrientation="1" flexiMaxLines="0" FlipMode="0">
+      <Name>Tasks</Name>
+      <CustomName>Tasks</CustomName>
+      <LogicalName>fs_workordertask.workorderid</LogicalName>
+      <Binding SchemaName="fs_workordertask.workorderid">
+        <IsConstant>false</IsConstant>
+      </Binding>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab" flexi="1" flexiHeight="200px" flexiWidth="1" flexiHeader="1" flexiOrientation="1" flexiMaxLines="0" FlipMode="0">
+      <Name>Schedules</Name>
+      <CustomName>Schedules</CustomName>
+      <LogicalName>fs_workorderschedule.workorderid</LogicalName>
+      <Binding SchemaName="fs_workorderschedule.workorderid">
+        <IsConstant>false</IsConstant>
+      </Binding>
+    </FormTab>
+    <FormTab xsi:type="MapTab" flexi="1" flexiHeight="200px" flexiWidth="1" flexiHeader="1" flexiMaxLines="0">
+      <Name>Map</Name>
+      <CoordinatesBinding>Latitude;Longitude</CoordinatesBinding>
+    </FormTab>
+  </SerializedChildrenV2>
+  <Navigation flexi="0" flexiHeader="1" flexiMaxLines="0">
+    <Name>Navigation</Name>
+    <SerializedChildren />
+  </Navigation>
+  <WorkflowItemChanged>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="18" version="0"&gt;&lt;branch e="true"&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.customerid&lt;/var&gt;&lt;op&gt;ContainsData&lt;/op&gt;&lt;/condition&gt;&lt;condition e="false"&gt;&lt;var&gt;ChangedItem&lt;/var&gt;&lt;arg&gt;String:customerid&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;definition e="true"&gt;&lt;var&gt;account&lt;/var&gt;&lt;arg&gt;var:Entity.customerid&lt;/arg&gt;&lt;arg&gt;String:account&lt;/arg&gt;&lt;func&gt;LoadReference&lt;/func&gt;&lt;type&gt;Entity&lt;/type&gt;&lt;/definition&gt;&lt;function e="false"&gt;&lt;var&gt;Shared.Street&lt;/var&gt;&lt;arg&gt;var:account.address1_line1&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Shared.City&lt;/var&gt;&lt;arg&gt;var:account.address1_city&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Shared.Country&lt;/var&gt;&lt;arg&gt;var:account.address1_country&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Shared.PostalCode&lt;/var&gt;&lt;arg&gt;var:account.address1_postalcode&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Shared.State&lt;/var&gt;&lt;arg&gt;var:account.address1_stateorprovince&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Shared.Latitude&lt;/var&gt;&lt;arg&gt;var:account.address1_latitude&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Shared.Longitude&lt;/var&gt;&lt;arg&gt;var:account.address1_longitude&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Map.IsLoaded&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/Workflow&gt;</WorkflowItemChanged>
+  <SharedVariables>&lt;SharedVariables&gt;&lt;Variables&gt;&lt;SharedVariable usage="OnChangeEnabled"&gt;&lt;Name&gt;Street&lt;/Name&gt;&lt;CrmType&gt;String&lt;/CrmType&gt;&lt;/SharedVariable&gt;&lt;SharedVariable usage="OnChangeEnabled"&gt;&lt;Name&gt;City&lt;/Name&gt;&lt;CrmType&gt;String&lt;/CrmType&gt;&lt;/SharedVariable&gt;&lt;SharedVariable usage="OnChangeEnabled"&gt;&lt;Name&gt;Country&lt;/Name&gt;&lt;CrmType&gt;String&lt;/CrmType&gt;&lt;/SharedVariable&gt;&lt;SharedVariable usage="OnChangeEnabled"&gt;&lt;Name&gt;PostalCode&lt;/Name&gt;&lt;CrmType&gt;String&lt;/CrmType&gt;&lt;/SharedVariable&gt;&lt;SharedVariable usage="OnChangeEnabled"&gt;&lt;Name&gt;State&lt;/Name&gt;&lt;CrmType&gt;String&lt;/CrmType&gt;&lt;/SharedVariable&gt;&lt;SharedVariable usage="OnChangeEnabled"&gt;&lt;Name&gt;Latitude&lt;/Name&gt;&lt;CrmType&gt;Decimal&lt;/CrmType&gt;&lt;/SharedVariable&gt;&lt;SharedVariable usage="OnChangeEnabled"&gt;&lt;Name&gt;Longitude&lt;/Name&gt;&lt;CrmType&gt;Decimal&lt;/CrmType&gt;&lt;/SharedVariable&gt;&lt;/Variables&gt;&lt;/SharedVariables&gt;</SharedVariables>
+  <SharedVariableNames>
+    <string>Street</string>
+    <string>City</string>
+    <string>Country</string>
+    <string>PostalCode</string>
+    <string>State</string>
+    <string>Latitude</string>
+    <string>Longitude</string>
+  </SharedVariableNames>
+  <PrimaryCommands>Favorite||</PrimaryCommands>
+  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
+  <SerializedContactInfo />
+</EntityForm>
